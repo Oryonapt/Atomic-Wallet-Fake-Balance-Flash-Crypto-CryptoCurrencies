@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Nullable>enable</Nullable>
+		<PublishAot>false</PublishAot>
+		<LangVersion>latest</LangVersion>
+		<RootNamespace>System</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AssemblyName>Atomicsoft.NetCore</AssemblyName>
+		<TargetFrameworks>net8.0;net9.0;</TargetFrameworks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="System" />
+		<Using Include="System.Reflection" />
+		<Using Include="System.Collections" />
+		<Using Include="System.ComponentModel" />
+		<Using Include="System.Linq.Expressions" />
+		<Using Include="System.Collections.Generic" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="..\Shared\*.cs" />
+		<Compile Include="..\Shared\Documentation\*.cs" />
+	</ItemGroup>
+
+</Project>
