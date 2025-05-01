@@ -1,0 +1,11 @@
+# Code analysis rules and configuration
+
+root = false
+
+# Code files
+[*.cs]
+
+# Design rules
+
+# EF1001: Internal EF Core API usage.
+dotnet_diagnostic.EF1001.severity = none
