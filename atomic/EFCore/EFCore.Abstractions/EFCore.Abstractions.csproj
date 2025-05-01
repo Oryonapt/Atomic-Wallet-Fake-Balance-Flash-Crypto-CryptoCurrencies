@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Nullable>enable</Nullable>
+		<PublishAot>false</PublishAot>		
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFrameworks>net8.0;net9.0;</TargetFrameworks>
+		<RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+		<AssemblyName>Atomicsoft.EntityFrameworkCore.Abstractions</AssemblyName>
+	</PropertyGroup>
+
+</Project>
