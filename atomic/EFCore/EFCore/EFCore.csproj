@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>See for more "Microsoft.EntityFrameworkCore"</Description>
+		<Nullable>enable</Nullable>
+		<PublishAot>false</PublishAot>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFrameworks>net8.0;net9.0;</TargetFrameworks>
+		<RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+		<AssemblyName>Atomicsoft.EntityFrameworkCore</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="System.Reflection" />
+		<Using Include="System.Data.Common" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Linq.Expressions" />
+		<Using Include="Microsoft.Extensions.Logging" />
+		<Using Include="Microsoft.EntityFrameworkCore" />
+		<Using Include="System.Diagnostics.CodeAnalysis" />
+		<Using Include="Microsoft.EntityFrameworkCore.Query" />
+		<Using Include="Microsoft.EntityFrameworkCore.Update" />
+		<Using Include="Microsoft.EntityFrameworkCore.Design" />
+		<Using Include="Microsoft.EntityFrameworkCore.Storage" />
+		<Using Include="Microsoft.EntityFrameworkCore.Metadata" />
+		<Using Include="Microsoft.EntityFrameworkCore.Utilities" />
+		<Using Include="Microsoft.Extensions.DependencyInjection" />
+		<Using Include="Microsoft.EntityFrameworkCore.Diagnostics" />
+		<Using Include="Microsoft.EntityFrameworkCore.ChangeTracking" />
+		<Using Include="Microsoft.EntityFrameworkCore.Infrastructure" />
+		<Using Include="Microsoft.EntityFrameworkCore.ValueGeneration" />
+		<Using Include="Microsoft.EntityFrameworkCore.Metadata.Builders" />
+		<Using Include="Microsoft.EntityFrameworkCore.Metadata.Conventions" />
+		<Using Include="Microsoft.EntityFrameworkCore.Storage.ValueConversion" />
+		<Using Include="Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="..\..\Shared\*.cs" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\EFCore.Abstractions\EFCore.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>
